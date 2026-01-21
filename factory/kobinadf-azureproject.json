@@ -1,0 +1,9 @@
+{
+	"name": "kobinadf-azureproject",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "38c59d4d-2bb9-47be-8e8d-3fe3adf9f684",
+		"tenantId": "5803280f-4053-43ec-9b19-9357e1e948e0"
+	}
+}
