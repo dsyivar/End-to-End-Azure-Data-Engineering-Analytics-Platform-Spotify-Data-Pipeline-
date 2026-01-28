@@ -1,0 +1,22 @@
+
+bundle:
+  name: spotify_dab
+  uuid: c3fc27cf-700f-45bc-81aa-cbadacd21478
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://adb-7405607634069593.13.azuredatabricks.net
+      root_path: /Workspace/Users/kobinaodame@kobinaodamegmail.onmicrosoft.com/.bundle/${bundle.name}/${bundle.target}
+      
+  prod:
+    mode: production
+    workspace:
+      host: https://adb-7405607634069593.13.azuredatabricks.net
+      root_path: /Workspace/Prod.bundle/${bundle.name}/${bundle.target}
+
+    permissions:
+      - user_name: kobinaodame@kobinaodamegmail.onmicrosoft.com
+        level: CAN_MANAGE
